@@ -1,0 +1,29 @@
+#spring.h2.console.enabled=true
+#spring.jpa.show-sql=true
+#spring.jpa.properties.hibernate.format_sql=true
+#spring.datasource.url=jdbc:h2:mem:default
+# application 확장자가 properties였다면 위의 코드로 작성
+
+spring:
+  h2:
+    console:
+      enabled: true # h2 db 사용할거임!
+  jpa:
+    show-sql: true # JPA로 실행되는 쿼리문 보여주기
+    properties:
+      hibernate: # 자동 완성 안되니 오타 안나게 주의
+        format_sql: true # 쿼리문 줄 바꿔서 정렬시켜주기
+  datasource:
+    url: jdbc:h2:mem:default # database 주소
+
+# localhost:8080/h2-console 로 h2 데이터베이스 접근 가능
+
+#스프링이
+#h2
+#콘솔을
+#사용할거고
+#jpa는
+#sql문 서버 로그에 찍어주고
+#sql문 구조 맞춰서 보기 좋게 찍어라
+#데이터베이스 위치는
+#아래의 url이다.
